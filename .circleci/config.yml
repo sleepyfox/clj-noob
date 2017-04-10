@@ -6,6 +6,7 @@ jobs:
       - image: clojure
     steps:
       - checkout
+      - run: apt-get update && apt-get install -yq make
       - run: lein deps
       - run: lein test
       - run: make build
