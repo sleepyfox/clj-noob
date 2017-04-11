@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/clj-noob
     docker:
-      - image: clojure:2.7.1
+      - image: clojure
     steps:
       - checkout
       - setup_remote_docker
